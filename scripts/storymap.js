@@ -354,10 +354,10 @@ $(window).on('load', function() {
       credit += ' | ';
     }
 
-  /*  credit += 'View <a href="' + getSetting('_githubRepo') + '">code</a>';
+    credit += 'View <a href="' + getSetting('_githubRepo') + '">code</a>';
     if (getSetting('_codeCredit')) credit += ' by ' + getSetting('_codeCredit');
     credit += ' with ';
     $('.leaflet-control-attribution')[0].innerHTML = credit + attributionHTML;
-  }*/
+  }
 
 });
