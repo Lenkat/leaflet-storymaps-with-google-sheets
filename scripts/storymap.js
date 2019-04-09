@@ -207,7 +207,7 @@ $(window).on('load', function() {
     }
 
     // For each block (chapter), calculate how many pixels above it
-    pixelsAbove[0] = -50;
+    pixelsAbove[0] = -100;
     for (i = 1; i < chapters.length; i++) {
       pixelsAbove[i] = pixelsAbove[i-1] + $('div#container' + (i-1)).height() + chapterContainerMargin;
     }
@@ -354,10 +354,10 @@ $(window).on('load', function() {
       credit += ' | ';
     }
 
-    credit += 'View <a href="' + getSetting('_githubRepo') + '">code</a>';
+  /*  credit += 'View <a href="' + getSetting('_githubRepo') + '">code</a>';
     if (getSetting('_codeCredit')) credit += ' by ' + getSetting('_codeCredit');
     credit += ' with ';
     $('.leaflet-control-attribution')[0].innerHTML = credit + attributionHTML;
-  }
+  }*/
 
 });
