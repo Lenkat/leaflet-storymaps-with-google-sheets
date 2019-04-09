@@ -231,10 +231,10 @@ $(window).on('load', function() {
           currentlyInFocus = i;
 
           for (k = 0; k < pixelsAbove.length - 1; k++) {
-            changeMarkerColor(k, 'orange', 'blue');
+            changeMarkerColor(k, 'orange', 'red');
           }
 
-          changeMarkerColor(i, 'blue', 'orange');
+          changeMarkerColor(i, 'red', 'orange');
 
           // Remove overlay tile layer if needed
           if (map.hasLayer(overlay)) {
