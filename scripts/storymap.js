@@ -2,7 +2,7 @@ $(window).on('load', function() {
   var documentSettings = {};
 
   // Some constants, such as default settings
-  const CHAPTER_ZOOM = 15;
+  const CHAPTER_ZOOM = 5;
 
   // This watches for the scrollable container
   var scrollPosition = 0;
@@ -269,7 +269,7 @@ $(window).on('load', function() {
           // Fly to the new marker destination if latitude and longitude exist
           if (chapters[i]['Latitude'] && chapters[i]['Longitude']) {
             var zoom = chapters[i]['Zoom'] ? chapters[i]['Zoom'] : CHAPTER_ZOOM;
-            map.flyTo([chapters[i]['Latitude'], chapters[i]['Longitude'], zoom);
+            map.flyTo([chapters[i]['Latitude'], chapters[i]['Longitude']], zoom);
           }
 
           // No need to iterate through the following chapters
